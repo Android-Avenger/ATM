@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.LoginScreen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1.5">
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@drawable/login"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="25dp"
+        android:orientation="vertical"
+        android:layout_weight="2.5">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:strokeColor="#6D1565C0"
+            app:strokeWidth="1dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp"
+
+            >
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:hint="Email"
+                />
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:strokeColor="#6D1565C0"
+            app:strokeWidth="1dp"
+            android:layout_marginTop="20sp"
+            app:cardCornerRadius="10dp"
+
+            >
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:hint="Password"
+
+                />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/Login"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="#1565C0"
+            android:text="LOGIN"
+            android:fontFamily="@font/quattrocento_sans"
+            android:gravity="center"
+            android:textSize="16sp"
+            app:cornerRadius="20sp" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/quattrocento_sans"
+            android:text="Register"
+
+            android:textColor="#E11565C0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

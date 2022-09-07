@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="@color/dark_blue"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="Send Money"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:src="@drawable/send_money"
+            android:layout_margin="10dp"
+            />
+
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+
+        <EditText
+            android:id="@+id/recipientEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edith_bkg"
+            android:hint="Recipient Email "
+            android:paddingLeft="20dp"
+            />
+        <EditText
+            android:id="@+id/senderAmount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edith_bkg"
+            android:hint="Amount "
+            android:paddingLeft="20dp"
+            />
+        <EditText
+            android:id="@+id/senderPin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edith_bkg"
+            android:hint="PIN "
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            />
+
+        <TextView
+
+            android:id="@+id/send"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/blue_corners"
+            android:fontFamily="@font/quicksand_medium"
+            android:gravity="center"
+            android:text="SEND"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
